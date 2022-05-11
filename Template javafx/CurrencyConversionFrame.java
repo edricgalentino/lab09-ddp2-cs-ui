@@ -11,16 +11,13 @@ import java.util.HashMap;
 public class CurrencyConversionFrame extends Application {
     Label labelTitle, labelFrom, labelTo;
     Button convertButton, exitButton;
-    ObservableList<String> currency = FXCollections.observableArrayList(
-            "Rupiah",
-            "Euro",
-            "US Dollar"
-    );
+    ObservableList<String> currency =
+            FXCollections.observableArrayList("Rupiah", "Euro", "US Dollar");
 
     HashMap<String, Integer> kurs = new HashMap<String, Integer>();
 
     @Override
-    public void start(final Stage primaryStage){
+    public void start(final Stage primaryStage) {
         kurs.put("Rupiah", 1);
         kurs.put("Euro", 15000);
         kurs.put("US Dollar", 14000);
@@ -72,7 +69,8 @@ public class CurrencyConversionFrame extends Application {
     }
 
     // Method converter
-    public String ConvertCurrency(String originalValue, String tipeCurrencyFrom, String tipeCurrencyTo) {
+    public String ConvertCurrency(String originalValue, String tipeCurrencyFrom,
+            String tipeCurrencyTo) {
         double value = Double.valueOf(originalValue);
         double fromValue = value * kurs.get(tipeCurrencyFrom);
         double convertedValue = fromValue / kurs.get(tipeCurrencyTo);
