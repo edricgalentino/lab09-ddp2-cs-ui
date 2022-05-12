@@ -18,8 +18,6 @@ public class CurrencyConversionFrame extends JFrame {
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setSize(300, 300);
 
-
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Currency Converter");
 
