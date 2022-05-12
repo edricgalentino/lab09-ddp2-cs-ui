@@ -17,12 +17,12 @@ public class CurrencyConversionFrame extends JFrame {
         // TO DO: Menentukan layout dan size yang ingin digunakan
         // insert panel to frame
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-        setSize(300, 300);
+        setSize(500, 350);
         // set background color to lightblue
         setBackground(new java.awt.Color(0, 191, 255));
         // set font to poppins
         setFont(new Font("Poppins", Font.PLAIN, 20));
-        // set
+        // setFont(new Font("Arial", Font.PLAIN, 20));
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Currency Converter");
@@ -44,7 +44,7 @@ public class CurrencyConversionFrame extends JFrame {
         labelFrom = new JLabel("From");
         labelFrom.setText("From");
         // make the text bigger and center horizontally but not vertically
-        labelFrom.setFont(labelFrom.getFont().deriveFont(12.0f));
+        labelFrom.setFont(labelFrom.getFont().deriveFont(14.0f));
 
         // create a dropdown menu
         JComboBox<String> from = new JComboBox<String>(currency);
@@ -55,22 +55,25 @@ public class CurrencyConversionFrame extends JFrame {
         // create a text box
         JTextField fromAmount = new JTextField(10);
         // add a padding to the text box
-        fromAmount.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        fromAmount.setBorder(BorderFactory.createEmptyBorder(7, 7, 7, 7));
         // set the default value
         from.setSelectedItem("Rupiah");
         fromAmount.setText("");
 
+
+        // ---------------------------------
+
         labelTo = new JLabel("To");
         // make the text bigger and center horizontally but not vertically
-        labelTo.setFont(labelTo.getFont().deriveFont(12.0f));
+        labelTo.setFont(labelTo.getFont().deriveFont(14.0f));
         // create a dropdown menu
         JComboBox<String> to = new JComboBox<String>(currency);
         // design the dropdown menu
-        from.setFont(from.getFont().deriveFont(12.0f));
-        from.setPreferredSize(new java.awt.Dimension(100, 30));
+        to.setFont(to.getFont().deriveFont(12.0f));
+        to.setPreferredSize(new java.awt.Dimension(100, 30));
         // create a text box
         JTextField toAmount = new JTextField(10);
-        toAmount.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        toAmount.setBorder(BorderFactory.createEmptyBorder(7, 7, 7, 7));
         // set the default value
         to.setSelectedItem("US Dollar");
         toAmount.setText("");
