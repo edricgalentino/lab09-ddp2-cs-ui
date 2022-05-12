@@ -95,6 +95,7 @@ public class CurrencyConversionFrame extends JFrame {
         add(panelTo);
         add(panelButton);
 
+
         // TO DO: Masukkan panel ke dalam frame
         // insert panel to frame
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
