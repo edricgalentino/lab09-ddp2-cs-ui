@@ -14,6 +14,10 @@ public class CurrencyConversionFrame extends JFrame {
         kurs.put("US Dollar", 14000);
 
         // TO DO: Menentukan layout dan size yang ingin digunakan
+        // insert panel to frame
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        setSize(300, 300);
+
 
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -99,9 +103,6 @@ public class CurrencyConversionFrame extends JFrame {
 
 
         // TO DO: Masukkan panel ke dalam frame
-        // insert panel to frame
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-        setSize(300, 300);
 
         setVisible(true);
 
