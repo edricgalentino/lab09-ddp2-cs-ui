@@ -48,7 +48,7 @@ public class CurrencyConversionFrame extends JFrame {
 
         labelTo = new JLabel("To");
         // make the text bigger and center horizontally but not vertically
-        labelFrom.setFont(labelFrom.getFont().deriveFont(20.0f));
+        labelTo.setFont(labelTo.getFont().deriveFont(20.0f));
         // create a dropdown menu
         JComboBox<String> to = new JComboBox<String>(currency);
         // create a text box
