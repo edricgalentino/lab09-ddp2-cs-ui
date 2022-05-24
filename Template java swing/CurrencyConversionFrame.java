@@ -36,8 +36,6 @@ public class CurrencyConversionFrame extends JFrame {
         labelTitle.setFont(labelTitle.getFont().deriveFont(20.0f));
         labelTitle.setHorizontalAlignment(JLabel.CENTER);
 
-
-
         // TO DO: Membuat dropdown menu
 
 
@@ -92,10 +90,7 @@ public class CurrencyConversionFrame extends JFrame {
         convertButton.setText("Convert");
         exitButton.setText("Exit");
         // make both button appear in the same line
-        convertButton.setAlignmentX(JButton.CENTER_ALIGNMENT);
-
-
-
+        // convertButton.setAlignmentX(JButton.CENTER_ALIGNMENT);
         // TO DO: Masukkan widget ke panel yang tepat
         // create a panel for each widget
         JPanel panelTitle = new JPanel();
